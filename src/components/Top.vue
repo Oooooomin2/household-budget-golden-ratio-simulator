@@ -6,7 +6,7 @@
           <v-col cols="12" md="8" lg="6">
             <span v-if="error" class="red--text">{{ error }}</span>
             <v-text-field
-              class="font-weight-bold text-h6 mt-1"
+              class="font-weight-bold text-h6 mt-4"
               label="月の手取りを入力してください"
               persistent-hint
               outlined
