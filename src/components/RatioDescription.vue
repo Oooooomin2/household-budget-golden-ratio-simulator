@@ -7,14 +7,14 @@
             ma-2
             font-navigation
             text-md-body-1 text-sm-button
-            ml-md-5 ml-sm-3
+            ml-md-5 ml-sm-3 text-caption
           "
           color="yellow darken-4"
           v-bind="attrs"
           v-on="on"
           dark
         >
-          黄金比率とは?<v-icon dark right>mdi-help-circle</v-icon>
+          黄金比率とは?<v-icon class="hidden-sm-and-down" dark right>mdi-help-circle</v-icon>
         </v-btn>
       </template>
       <template v-slot:default="dialog">
