@@ -4,13 +4,13 @@
       <div class="d-flex align-center">
         <v-img
           alt="household-budget-golden-ratio-simulator Logo"
-          class="shrink mr-2"
+          class="shrink mr-2 hidden-sm-and-down"
           contain
           src="./assets/logo.png"
           transition="scale-transition"
           width="40"
         />
-        <v-toolbar-title class="text-sm-h5 text-md-h4 font-navigation">
+        <v-toolbar-title class="text-sm-h5 text-md-h4 text-subtitle-1 font-navigation">
           家計 黄金比率シミュレーター
         </v-toolbar-title>
         <RatioDescription />
