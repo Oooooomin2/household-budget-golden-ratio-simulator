@@ -10,9 +10,10 @@
           transition="scale-transition"
           width="40"
         />
-        <v-toolbar-title class="text-sm-h5 text-md-h4 font-title">
+        <v-toolbar-title class="text-sm-h5 text-md-h4 font-navigation">
           家計 黄金比率シミュレーター
         </v-toolbar-title>
+        <RatioDescription />
       </div>
     </v-app-bar>
 
@@ -23,19 +24,22 @@
 </template>
 
 <style scoped>
-.font-title {
-  font-family: 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif !important;
+.font-navigation {
+  font-family: 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica,
+    Arial, sans-serif !important;
 }
 </style>
 
 <script>
 import Top from "./components/Top";
+import RatioDescription from "./components/RatioDescription.vue"
 
 export default {
   name: "App",
 
   components: {
     Top,
+    RatioDescription
   },
 };
 </script>
