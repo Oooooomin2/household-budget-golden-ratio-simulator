@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="amber darken-3" dark>
+      <div class="d-flex align-center">
+        <v-img
+          alt="household-budget-golden-ratio-simulator Logo"
+          class="shrink mr-2"
+          contain
+          src="./assets/logo.png"
+          transition="scale-transition"
+          width="40"
+        />
+        <v-toolbar-title class="text-sm-h5 text-md-h4 font-title">
+          家計 黄金比率シミュレーター
+        </v-toolbar-title>
+      </div>
+    </v-app-bar>
+
+    <v-main>
+      <Top />
+    </v-main>
+  </v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.font-title {
+  font-family: 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif !important;
 }
 </style>
+
+<script>
+import Top from "./components/Top";
+
+export default {
+  name: "App",
+
+  components: {
+    Top,
+  },
+};
+</script>
